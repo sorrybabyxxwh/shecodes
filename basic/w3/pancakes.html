@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Pancakes are the best 🐻</title>
+    <style>
+        h1{
+            text-align: center;
+            color: palevioletred;
+            font-size: 42px;
+        }
+        h2{
+            border: 1px solid palevioletred;
+            text-align: center;
+            padding: 10px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+            border-radius: 10px;
+        }
+        p{
+            line-height: 1.9;
+            font-size: 18px;
+            padding: 0 20px 0 20px;
+        }
+        .learn_more{
+            margin-top: 10px;
+            text-decoration: none;
+            color: palevioletred;
+        }
+        .learn_more:hover{
+            text-decoration: underline;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            background: palevioletred;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            padding: 15px 35px;
+            font-size: 24px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+
+        }
+        button:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        .footer{
+            text-align: center;
+            line-height: 1.8;
+        }
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
+        }
+        em{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Pancakes lover</h1>
+    <hr>
+    <h2>Do you like pancakes?</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/254/original/nicole-goulart-ejhBUdJRx1U-unsplash.jpg?1654343466" alt="pancakes" >
+    <p><strong>Pancakes are good for your health.</strong> It's an important source for strengthening bones as well as helping your muscles and nerves function, Pancakes include milk which is a source of calcium, which is where most of the calcium intake will come from however the other ingredients include small amounts of calcium as well to give you that extra boost.
+        <br>
+        <a href="https://www.themodernman.co.uk/blog/pancake-day-pancake-health-benefits/#:~:text=It's%20an%20important%20source%20for,give%20you%20that%20extra%20boost." target="_blank" class="learn_more">Learn more here.</a></p>
+        
+        <button class="buy_btn">👉 Buy Pancakes 👈</button>
+
+        <p class="footer">
+            This page was built by <em>Me</em>
+        </p>
+    </div>
+    <script>
+        function buy(){ 
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            alert(`Thank you ${name}! We'll be in touch by email! Hope you have found something interesting here!!`);
+     
+        }
+        let buy_btn = document.querySelector(".buy_btn");
+        buy_btn.addEventListener("click", buy)
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App</title>
+    <style>
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        .main{
+            padding-top: 40px;
+            margin: 0 auto;
+            width: 500px;
+           
+        }
+        .currently, .tomorrow, .Saturday, .Sunday{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        .currently:hover{
+            background-color: lightsalmon;
+        }
+        .tomorrow:hover{
+            background-color: lightsalmon;
+        }
+        .Saturday:hover{
+            background-color: lightsalmon;
+        }
+        .Sunday:hover{
+            background-color: lightsalmon;
+        }
+        button{
+        border: 1px solid #885df1;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        display: block;
+        color: #885df1;
+        font-size: 16px;
+        background: transparent;
+        padding: 15px 20px;
+        transition: all 200ms ease;
+        }
+        button:hover {
+        color: #fff;
+        background: #885df1;
+      }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="currently">
+            <img src="https://static.meteoblue.com/assets/images/picto/02_iday.svg" alt="sun">
+            <h1>Currently 21&#176 in Tokyo</h1>
+            <p>12&#176/<strong>23&#176</strong></p>
+        </div>
+        <div class="tomorrow">
+            <img src="https://apksshare.com/wp-content/uploads/2021/06/Simple-weather-clock-widget-no-ads-APK-MOD-Download-0.9.70.png" alt="clouds">
+            <h1>Tomorrow</h1>
+            <p>10&#176/<strong>25&#176</strong></p>
+        </div>
+        <div class="Saturday">
+            <img src="https://apksshare.com/wp-content/uploads/2021/06/Simple-weather-clock-widget-no-ads-APK-MOD-Download-0.9.70.png" alt="clouds">
+            <h1>Saturday</h1>
+            <p>9&#176/<strong>20&#176</strong></p>
+        </div>
+        <div class="Sunday">
+            <img src="https://static.meteoblue.com/assets/images/picto/02_iday.svg" alt="sun">
+            <h1>Sunday</h1>
+            <p>15&#176/<strong>28&#176</strong></p>
+        </div>
+        <button>Change city</button>
+    </div>
+   
+</body>
+</html>
